@@ -495,6 +495,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+/* read more*/
+
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -703,18 +710,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: black;
 }
 
-#why-us .card .readmore {
-  color: black;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
-}
-
-#why-us .card .readmore:hover {
-  border-bottom: #fff solid 2px;
-}
-
 #why-us .counters {
   padding-top: 40px;
 }
@@ -735,6 +730,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   color:  #0c2e8a;
 }
+/* read more*/
+
+#myBtn, #myBtn1, #myBtn2, #myBtn3{
+	color:  #0c2e8a;
+  border: 1px solid  #f73a40;
+   border-radius: 4px;
+}
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+
+
 /* Clients Section
 --------------------------------*/
 
