@@ -1,9 +1,3 @@
-/*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -755,9 +749,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #clients img {
   max-width: 100%;
+  max-height: 10%;
   opacity: 0.5;
   transition: 0.3s;
-  padding: 15px 0;
+  padding: 15px;
 }
 
 #clients img:hover {
@@ -822,6 +817,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-item img {
   transition: all ease-in-out 0.4s;
   width: 100%;
+  height: 100%;
 }
 
 #portfolio .portfolio-item:hover img {
@@ -1238,4 +1234,32 @@ body.mobile-nav-active #mobile-nav-toggle {
   #contact #google-map {
     margin-top: 20px;
   }
+}
+.icon{
+height: 50px;
+width: 50px;
+float: left;
+border-radius: 50%;
+}
+.icon-text{
+  margin: 0px;
+}
+/*wp 8*/
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
 }

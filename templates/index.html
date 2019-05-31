@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Reveal Bootstrap Template</title>
+  <title>Shree Lakshmi catering</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
-  <link href="{{ url_for('static', filename='img/apple-touch-icon.png" rel="apple-touch-icon') }}">
+  <link href="{{ url_for('static', filename='img/fav.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='img/icon.png" rel="apple-touch-icon') }}">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -31,12 +31,6 @@
   <!-- Main Stylesheet File -->
   <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: Reveal
-    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
 <body id="body">
@@ -67,21 +61,19 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Laxmi<span>Hospitality</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+	  <a href="#body"><img src="{{ url_for('static', filename='img/logo1.png') }}" alt="" title="" style="width: 35%; height: auto; margin-top: -10px" /></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#body">Home</a></li>
-        <li><a href="#menu">Menu</a>
-            <ul>
+          <li><a href="#menu">Menu</a>
+            <!--<ul>
               <li><a href="#">Drop Down 1</a></li>
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
          
-            </ul>
+            </ul> -->
           </li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
@@ -98,10 +90,10 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Cook & Serve <span>food like</span><br>mother!</h2>
+      <h2>We Cook & Serve <span>food like</span><br>mother!</h2>
       <div>
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
+        <a href="https://api.whatsapp.com/send?phone=7046717674&text=I%20would%20like%20to%20give%20order."class="btn-projects scrollto">Contact now</a>
       </div>
     </div>
 
@@ -124,18 +116,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 about-img">
-            <img src="{{ url_for('static', filename='img/about-img.jpg') }}" alt="">
+            <img style="width: 100%; height: auto;" src="{{ url_for('static', filename='img/about-img.jpg') }}" alt="">
           </div>
 
           <div class="col-lg-6 content">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-
-            <ul>
+            <h2>About lakshmi hospitality</h2>
+            <h3>One cannot think well, love well, sleep well if one has not dined well.</h3>
+            <p> We have earned tremendous respect and appreciation from our clients for serving quality and tasty food. We have shown rapid and sustainable growth in our service.</p>
+            <p>Whether it is industry, institute or corporate, we are specialized to everywhere. We believe in serving and cooking food as a mother does. Using only the best quality ingredient we bring tasty, healthy and nutritious food.</p>
+           <!--  <ul>
               <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
+            </ul> -->
 
           </div>
         </div>
@@ -150,8 +143,8 @@
       <div class="container">
         <div class="section-header">
           <h2>Services</h2>
-          <p> Enabling quality food to the world with persistent quality and consistency.</p>
-        </div>
+          <!--<p> Enabling quality food to the world with persistent quality and consistency.</p>
+        --></div>
 
         <div class="row">
 
@@ -159,7 +152,7 @@
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="fa fa-hospital-o"></i></div>
               <h4 class="title"><a href="">Healthcare Catering</a></h4>
-              <p class="description">As critical-to-life as food can ever be, healthcare is almost a litmus test of how good a catering service can be ....</p>
+              <p class="description">As High-quality food is very essential in the recovery of the patient, We believe patients deserve good, nutritious food to aid with their recovery and make their stay pleasant.</p>
             </div>
           </div>
 
@@ -167,7 +160,7 @@
             <div class="box wow fadeInRight">
               <div class="icon"><i class="fa fa-industry"></i></div>
               <h4 class="title"><a href="">Industrial Catering</a></h4>
-              <p class="description">As industries can be some of the most rough places to be, with mentally and physically challenging routines, we.......<p>
+              <p class="description">Each employee of the industry faces mental and physical challenges. To work with high productivity, we ensure the best quality of food and meals for them.<p>
             </div>
           </div>
 
@@ -175,7 +168,7 @@
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-university"></i></div>
               <h4 class="title"><a href="">Institutional Catering</a></h4>
-              <p class="description">When it comes to institutions of academic or government origins, food is not just an edible necessity; it becomes an aesthetic....... <p>
+              <p class="description"> Kids and youth are asset and future of the nation, we promise healthy and nutritious food as we consider it more like our duty. <p>
             </div>
           </div>
 
@@ -183,7 +176,7 @@
             <div class="box wow fadeInRight" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-building-o"></i></div>
               <h4 class="title"><a href="">Corporate Catering</a></h4>
-              <p class="description">We understand the nutritional requirements of various industries and hence ......</p>
+              <p class="description">Whether it is a corporate event or daily meal, we know how to please and satisfy employees with delicious food and a variety of items.</p>
             </div>
           </div>
 
@@ -195,7 +188,7 @@
 
     <!--==========================
       Why Us Section
-    ============================-->
+    ============================ -->
     <section id="why-us" class="wow fadeIn">
       <div class="container">
         <header class="section-header">
@@ -208,175 +201,75 @@
             <div class="card wow bounceInUp">
                 <i class="fa fa-diamond"></i>
               <div class="card-body">
-                <h5 class="card-title">Corporis dolorem</h5>
-                <p class="card-text">Deleniti optio et nisi dolorem debitis. The human responce Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus 
-				<span id="dots">.....</span><span id="more">ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-				Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
-				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
-				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-				</span>
-				<a  href="#read" onclick="myFunction()" id="myBtn">Read more</a>
+                <h5 class="card-title">Quality</h5>
+                <p class="card-text">We believe in quality, from raw materials to the final item, we make sure for best quality items are being used. Serving tasty, healthy and nutritious food is our aim.
 				</p>
-				
-				<script>
-				function myFunction() {
-				var dots = document.getElementById("dots");
-				var moreText = document.getElementById("more");
-				var btnText = document.getElementById("myBtn");
-
-				if (dots.style.display === "none") {
-				dots.style.display = "inline";
-				btnText.innerHTML = "Read more"; 
-				moreText.style.display = "none";
-				} else {
-				dots.style.display = "none";
-				btnText.innerHTML = "Read less"; 
-				moreText.style.display = "inline";
-				}
-				}
-				</script>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 mb-3">
             <div class="card wow bounceInUp">
-                <i class="fa fa-language"></i>
+                <i class="fa fa-users"></i>
               <div class="card-body">
-                <h5 class="card-title">Voluptates dolores</h5>
-              <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis 
-				<span id="dots1">...</span>
-				<span id="more1">ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-				Fusce luctus vestib et. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-				</span>
-				<a href="#read" onclick="myFunction1()" id="myBtn1">Read more</a>
+                <h5 class="card-title">Experience</h5>
+              <p class="card-text">To date, we have 99+ happy clients including major MNCs like L&T, Infocus, etc. From our 9 years of business, we know very well how to provide the best service and experience to our customer.
 				</p>
-					
-					
-					<script>
-				function myFunction1() {
-				var dots = document.getElementById("dots1");
-				var moreText = document.getElementById("more1");
-				var btnText = document.getElementById("myBtn1");
 
-				if (dots1.style.display === "none") {
-				dots.style.display = "inline";
-				btnText.innerHTML = "Read more"; 
-				moreText.style.display = "none";
-				} else {
-				dots.style.display = "none";
-				btnText.innerHTML = "Read less"; 
-				moreText.style.display = "inline";
-				}
-				}
-				</script>
                     
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-object-group"></i>
-              <div class="card-body">
-                <h5 class="card-title">Eum ut aspernatur</h5>
-				
-				 <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore offici
-				<span id="dots2">...</span><span id="more2">ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-				Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
-				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
-				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-				</span>
-				<a href="#read" onclick="myFunction2()" id="myBtn2">Read more</a>
-				</p>
-				
-				
-				<script>
-				function myFunction2() {
-				var dots = document.getElementById("dots2");
-				var moreText = document.getElementById("more2");
-				var btnText = document.getElementById("myBtn2");
-
-				if (dots.style.display === "none") {
-				dots.style.display = "inline";
-				btnText.innerHTML = "Read more"; 
-				moreText.style.display = "none";
-				} else {
-				dots.style.display = "none";
-				btnText.innerHTML = "Read less"; 
-				moreText.style.display = "inline";
-				}
-				}
-				</script>
-				
-				
-              </div>
-            </div>
-          </div>
 		  
 		 <div class="col-lg-3 mb-3">
             <div class="card wow bounceInUp">
-                <i class="fa fa-object-group"></i>
+                <i class="fa fa-heart"></i>
               <div class="card-body">
-                <h5 class="card-title">Eum ut aspernatur</h5>
+                <h5 class="card-title">Passion: Done with love</h5>
 
-			  <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus nothng is imposible
-				<span id="dots3">...</span><span id="more3">ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-				Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
-				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
-				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-				</span>
-				<a href="#read" onclick="myFunction3()" id="myBtn3">Read more</a>
-				</p>
-			
-				
-				<script>
-				function myFunction3() {
-				var dots = document.getElementById("dots3");
-				var moreText = document.getElementById("more3");
-				var btnText = document.getElementById("myBtn3");
-
-				if (dots.style.display === "none") {
-				dots.style.display = "inline";
-				btnText.innerHTML = "Read more"; 
-				moreText.style.display = "none";
-				} else {
-				dots.style.display = "none";
-				btnText.innerHTML = "Read less"; 
-				moreText.style.display = "inline";
-				}
-				}
-				</script>
-				
-               
+			  <p class="card-text">We believe in serving and cooking food as a mother does with love and joy. Our talented and passionate are serving daily 30,000 people with passion and love.
+			  </p>
               </div>
             </div>
           </div>
 
-        </div>
+            <div class="col-lg-3 mb-3">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-smile-o"></i>
+              <div class="card-body">
+                <h5 class="card-title">Customer satisfaction</h5>
+        
+         <p class="card-text">More than 99 clients are being served by us, who are delightful and satisfied with our service. We believe that Customers are the biggest asset thus we ensure your happiness.
+        </p>
+              
+            </div>
+            </div>
+          </div>
+        </div> 
+       
 
         <div class="row counters">
 
           <div class="col-lg-3 col-3 text-center">
-            <span data-toggle="counter-up">274</span>
-            <p>Clients</p>
+            <span data-toggle="counter-up">9 </span>
+            <p>Years of experience</p>
           </div>
 
           <div class="col-lg-3 col-3 text-center">
-            <span data-toggle="counter-up">421</span>
-            <p>Projects</p>
+            <span data-toggle="counter-up">99+</span>
+            <p>Happy clients</p>
+          </div>
+
+            <div class="col-lg-3 col-3 text-center">
+            <span data-toggle="counter-up">500+</span>
+            <p>Variety of items</p>
           </div>
 
           <div class="col-lg-3 col-3 text-center">
-            <span data-toggle="counter-up">364</span>
-            <p>Hours Of Support</p>
+            <span data-toggle="counter-up">30,000+</span>
+            <p>People served daily</p>
           </div>
-
-          <div class="col-lg-3 col-3 text-center">
-            <span data-toggle="counter-up">18</span>
-            <p>Hard Workers</p>
-          </div>
-  
         </div>
 
       </div>
@@ -389,18 +282,17 @@
       <div class="container">
         <div class="section-header">
           <h2>Clients</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
         </div>
 
         <div class="owl-carousel clients-carousel">
-          <img src="{{ url_for('static', filename='img/clients/client-1.jpg') }}" alt="">
           <img src="{{ url_for('static', filename='img/clients/client-2.jpg') }}" alt="">
+          <img src="{{ url_for('static', filename='img/clients/client-5.png') }}" alt="">
           <img src="{{ url_for('static', filename='img/clients/client-3.png') }}" alt="">
           <img src="{{ url_for('static', filename='img/clients/client-4.png') }}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-5.png') }}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-6.png') }}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-7.png') }}" alt="">
+		  <img src="{{ url_for('static', filename='img/clients/client-1.jpg') }}" alt="">
           <img src="{{ url_for('static', filename='img/clients/client-8.png') }}" alt="">
+		  <img src="{{ url_for('static', filename='img/clients/client-8.jpg') }}" alt="">
+          <img src="{{ url_for('static', filename='img/clients/client-7.png') }}" alt="">
         </div>
 
       </div>
@@ -435,7 +327,7 @@
           <div class="col-lg-3 col-6 col-md-4">
             <div class="portfolio-item wow fadeInUp">
               <a href="{{ url_for('static', filename='img/portfolio/2.jpg') }}" class="portfolio-popup">
-                <img src="{{ url_for('static', filename='img/portfolio/2.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='img/portfolio/2.jpg') }}" alt="" style="width: 119%">
                 <div class="portfolio-overlay">
                  
                 </div>
@@ -476,7 +368,7 @@
           <div class="col-lg-3 col-6 col-md-4">
             <div class="portfolio-item wow fadeInUp">
               <a href="{{ url_for('static', filename='img/portfolio/6.jpg') }}" class="portfolio-popup">
-                <img src="{{ url_for('static', filename='img/portfolio/6.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='img/portfolio/6.jpg') }}" alt="" style="width: 118%">
                 <div class="portfolio-overlay">
                               </div>
               </a>
@@ -486,7 +378,7 @@
           <div class="col-lg-3 col-6 col-md-4">
             <div class="portfolio-item wow fadeInUp">
               <a href="{{ url_for('static', filename='img/portfolio/7.jpg') }}" class="portfolio-popup">
-                <img src="{{ url_for('static', filename='img/portfolio/7.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='img/portfolio/7.jpg') }}" alt="" >
                 <div class="portfolio-overlay">
                           </div>
               </a>
@@ -509,78 +401,6 @@
       </div>
     </section><!-- #gallery -->
 
-   
-
-    <!--==========================
-      Testimonials Section
-    ============================-->
-    <section id="testimonials" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-        <div class="owl-carousel testimonials-carousel">
-
-            <div class="testimonial-item">
-              <p>
-                <img src="{{ url_for('static', filename='img/quote-sign-left.png') }}" class="quote-sign-left" alt="">
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="{{ url_for('static', filename='img/quote-sign-right.png') }}" class="quote-sign-right" alt="">
-              </p>
-              <img src="{{ url_for('static', filename='img/testimonial-1.jpg') }}" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="{{ url_for('static', filename='img/quote-sign-left.png') }}" class="quote-sign-left" alt="">
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <img src="{{ url_for('static', filename='img/quote-sign-right.png') }}" class="quote-sign-right" alt="">
-              </p>
-              <img src="{{ url_for('static', filename='img/testimonial-2.jpg') }}" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="{{ url_for('static', filename='img/quote-sign-left.png') }}" class="quote-sign-left" alt="">
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <img src="{{ url_for('static', filename='img/quote-sign-right.png') }}" class="quote-sign-right" alt="">
-              </p>
-              <img src="{{ url_for('static', filename='img/testimonial-3.jpg') }}" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="{{ url_for('static', filename='img/quote-sign-left.png') }}" class="quote-sign-left" alt="">
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <img src="{{ url_for('static', filename='img/quote-sign-right.png') }}" class="quote-sign-right" alt="">
-              </p>
-              <img src="{{ url_for('static', filename='img/testimonial-4.jpg') }}" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-            <div class="testimonial-item">
-              <p>
-                <img src="{{ url_for('static', filename='img/quote-sign-left.png') }}" class="quote-sign-left" alt="">
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <img src="{{ url_for('static', filename='img/quote-sign-right.png') }}" class="quote-sign-right" alt="">
-              </p>
-              <img src="{{ url_for('static', filename='img/testimonial-5.jpg') }}" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-
-        </div>
-
-      </div>
-    </section><!-- #testimonials -->
-
     <!--==========================
       Call To Action Section
     ============================-->
@@ -588,94 +408,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3 class="cta-title">Talk with us</h3>
+            <p class="cta-text"> Whether you do have any queries or you want to give us order, you are just one click away. Click the following button, which will redirect you to our WhatsApp and ask us your query.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="https://api.whatsapp.com/send?phone=919377780984&text=I%20would%20like%20to%20give%20order."> Order now Or Chat with us</a>
           </div>
         </div>
 
       </div>
     </section><!-- #call-to-action -->
-
-    <!--==========================
-      Our Team Section
-    ============================-->
-    <!--==========================
-    <section id="team" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Team</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="{{ url_for('static', filename='img/team-1.jpg') }}" alt=""></div>
-              <div class="details">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="{{ url_for('static', filename='img/team-2.jpg') }}" alt=""></div>
-              <div class="details">
-                <h4>Sarah Jhinson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="{{ url_for('static', filename='img/team-3.jpg') }}" alt=""></div>
-              <div class="details">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="{{ url_for('static', filename='img/team-4.jpg') }}" alt=""></div>
-              <div class="details">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> #team -->
 
     <!--==========================
       Contact Section
@@ -692,7 +434,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Address</h3>
-              <address>Waghodiya, Vadodara-390019 </address>
+              <address>H-18, Surbhi park society, Nr. kaladarshan char rasta, Waghodiya Road, Vadodara-19 </address>
             </div>
           </div>
 
@@ -716,37 +458,9 @@
       </div>
 
       <div class="container mb-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9066417459543!2d73.23007136724617!3d22.292131383749055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5778cad6949%3A0x586f9d9dc49e5ce4!2sSurbhi+Park+Society!5e0!3m2!1sen!2sin!4v1559045671411!5m2!1sen!2sin" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
-      <div class="container">
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
     </section><!-- #contact -->
 
   </main>
@@ -760,12 +474,15 @@
         &copy; Copyright <strong>Laxmi catering</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://webuildweb.herokuapp.com/">WeBuildWeb</a>
+        Designed by <a target="blank" href="https://webuildweb.herokuapp.com/">WeBuildWeb</a>
       </div>
     </div>
   </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+   <a href="https://api.whatsapp.com/send?phone=919377780984&text=I%20would%20like%20to%20give%20order." class="float" target="_blank">
+   <i class="fa fa-whatsapp my-float"></i>
+   </a>
 
   <!-- JavaScript Libraries -->
   <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
@@ -779,8 +496,6 @@
   <script src="{{ url_for('static', filename='lib/magnific-popup/magnific-popup.min.js') }}"></script>
   <script src="{{ url_for('static', filename='lib/sticky/sticky.js') }}"></script>
 
-  <!-- Contact Form JavaScript File -->
-  <script src="{{ url_for('static', filename='contactform/contactform.js') }}"></script>
 
   <!-- Template Main Javascript File -->
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
