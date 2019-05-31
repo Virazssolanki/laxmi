@@ -1234,6 +1234,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   #contact #google-map {
     margin-top: 20px;
   }
+  #why-us .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  color:  #f73a40;
+}
 }
 .icon{
 height: 50px;
