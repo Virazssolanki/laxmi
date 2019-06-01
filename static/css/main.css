@@ -603,19 +603,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-transform: translateY(-10px);
 }
 
-#services .box .icon {
+
+#services .box i {
+  color:  #444;
+  font-size: 84px;
+  transition: 0.5s;
   float: left;
 }
 
-#services .box .icon i {
-  color:  #444;
-  font-size: 64px;
-  transition: 0.5s;
-  line-height: 0;
-  margin-top: 34px;
-}
-
-#services .box .icon i:before {
+#services .box i:before {
   background: #0c2e8a;
   background: linear-gradient(45deg, #f73a40 0%, #a3ebd5 100%);
   background-clip: border-box;
@@ -624,21 +620,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box h4 {
-  margin-left: 100px;
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-weight: 600;
   font-size: 22px;
-}
+  color: #0c2e8a;
+  float: left;
 
-#services .box h4 a {
-  color: #444;
 }
 
 #services .box p {
   font-size: 14px;
-  margin-left: 100px;
-  margin-bottom: 0;
-  line-height: 24px;
+  line-height: 20px;
+  float: left;
+
 }
 /* why-us
 --------------------------------*/
@@ -1234,23 +1227,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   #contact #google-map {
     margin-top: 20px;
   }
-  #why-us .counters span {
+
+#services .box h4 {
+  margin-top: 7%;
+}
+
+#why-us .counters span {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   color:  #f73a40;
 }
+
 }
-.icon{
-height: 50px;
-width: 50px;
-float: left;
-border-radius: 50%;
-}
-.icon-text{
-  margin: 0px;
-}
+
+
 /*wp 8*/
 .float{
   position:fixed;
