@@ -1,0 +1,147 @@
+<!-- C:\flask\Annpurna>Venv\Scripts\Activate -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>પંચરત્ન વિદ્યાનિકેતન</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/school_logo.jpeg') }}" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">   
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}">    
+    <!-- Date Picker -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-datepicker.css') }}">   
+
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.css') }}" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="{{ url_for('static', filename='css/theme-color/default-theme.css') }}" rel="stylesheet">  
+
+    <!-- Main style sheet --> 
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+   
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>        
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body> 
+     
+      
+    <!-- <div id="aa-preloader-area">
+      <div class="mu-preloader">
+        <img src="{{ url_for('static',filename='img/gallery/preloader.gif')}}" alt=" loader img" style="width:150px">
+      </div>
+    </div> -->
+
+  <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>
+      <span>Top</span>
+    </a>
+
+  <!-- Start header section --> 
+  <header id="mu-header">  
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"style="background-color: white"></span>
+            <span class="icon-bar"style="background-color: white"></span>
+            <span class="icon-bar"style="background-color: white"></span>
+          </button>
+          <!-- LOGO --> 
+          <a class="navbar-brand" href="{{ url_for('index') }}"><img   class="img-fluid" id="logo" src="{{ url_for('static', filename='img/school_logo.jpeg') }}" alt="Logo img" ></a> 
+        </div>
+
+        
+        <div id="navbar" class="navbar-collapse collapse">
+      <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+
+            <li><a href="{{ url_for('index') }}">
+              <i class="fa fa-fw fa-home"></i>HOME</a></li>
+
+            <li><a href="https://surveyheart.com/form/5e8c23a972037c65db3641e5#welcome">
+              <i class="fa fa-bullhorn"></i>ADMISSION FORM</a></li>
+
+            <li><a href="{{ url_for('course') }}">
+              <i class="fa fa-book"></i>TEXTBOOK</a></li>
+
+            <li><a href="{{ url_for('result') }}">
+              <i class="fa fa-graduation-cap"></i>RESULTS</a></li>
+
+            <li><a href="{{ url_for('gallery') }}">
+              <i class="fa fa-picture-o"></i>GALLERY</a></li>
+
+            <li><a href="{{ url_for('contact') }}">
+              <i class="fa fa-fw fa-envelope"></i>CONTACT</a></li> 
+
+          </ul>                            
+        </div><!--/.nav-collapse -->    
+
+      </div>          
+    </nav> 
+  </header>
+  <!-- End header section -->
+ 
+{% block container %} {% endblock %}
+
+  <!-- Start Footer -->
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="mu-footer-area">
+           <div class="mu-footer-social">
+            <a href="https://www.facebook.com/110111204044241/posts/110120070710021/?flite=scwspnss&extid=zdthJZIIakMoE5gO"><span id="fb" class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-youtube"></span></a>
+          </div>
+
+          <div class="mu-footer-copyright">
+            <p>Designed by <a target="blank" href="https://megrut-tech.appspot.com">Megrut Technologies</a></p>
+          </div>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  
+  <!-- jQuery library -->
+
+  
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>   
+  <!-- Slick slider -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/slick.js') }}"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/waypoints.js') }}"></script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.js') }}"></script>
+  <!-- Date Picker -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script> 
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mixitup.js') }}"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fancybox.pack.js') }}"></script>
+
+  <!-- Custom js -->
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script> 
+
+  </body>
+</html>

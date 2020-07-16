@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+  <!-- Start slider  -->
+              <section id="mu-slider">
+                <div class="mu-slider-area"> <br><br><br><br>
+                  <!-- Top slider -->
+                  <div class="mu-top-slider">
+                    <!-- Top slider single slide -->
+                    <div class="mu-top-slider-single">
+                    <img src="{{ url_for('static', filename='img/slider/book.webp') }}" alt="img">
+                    <!-- Top slider content -->
+                    <div class="mu-top-slider-content">
+                      <h2 style="color: white">વિદ્યાર્થીઓ  ધોરણ 9 થી 12 ના ગુજરાતી મીડીયમ ના પાઠયપુસ્તક અહીંથી ડાઉનલોડ કરી શકે છે</h2> 
+                    </div>
+                      <!-- / Top slider content -->
+                    </div>
+                    <!-- / Top slider single slide -->
+                  </div>
+                </div>
+    
+                  <div class="container" class="col-sm-6">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span >કોમર્સ <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        </button><br><br><br>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="{{ url_for('course') }}">9,10</a></li>
+                          <li><a href="{{ url_for('arts') }}">11,12 આર્ટસ</a></li>
+                        </ul>
+                    </div>
+                  </div>
+
+              <div class="col-md-6">
+                <p class="subject">ધોરણ  11</p><br><br>
+                 <ul id="book">
+                  <li><a target="_blank" href="">ગુજરાતી</a></li><br>
+                  <li><a target="_blank" href="">English</a></li><br>
+                  <li><a target="_blank" href="">નામના મૂળતત્વો </a></li><br>
+                  <li><a target="_blank" href="">આંકડાશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="">અર્થશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="">વાણિજય વ્યવસ્થા અને સંચાલન</a></li><br>
+                  <li><a target="_blank" href="">સેક્રેટરિયલ પ્રેકટીસ</a></li><br>
+                </ul>
+              </div>
+
+              <div class="col-md-6">
+                <p class="subject">ધોરણ 12</p><br><br>
+                 <ul id="book">
+                  <li><a target="_blank" href="">ગુજરાતી</a></li><br>
+                  <li><a target="_blank" href="">English</a></li><br>
+                  <li><a target="_blank" href="">નામના મૂળતત્વો </a></li><br>
+                  <li><a target="_blank" href="">આંકડાશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1iSoWyA_kWnxwsgDrAzgVh0CRv93yiqoy">અર્થશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1pYUEKGH3_7CG-MO2Xu_IgQdlkTPaI2m6">વાણિજય વ્યવસ્થા અને સંચાલન</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1QeY3oCdG-9vSoMdsw5kBG9YR8AF49bqs">સેક્રેટરિયલ પ્રેકટીસ</a></li>
+                </ul>
+              </div>
+
+  <!-- End Gallery -->
+  </section>
+{% endblock %}

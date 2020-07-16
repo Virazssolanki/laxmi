@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block container %}
+
+  <!-- Start slider  -->
+  <section id="mu-slider">
+    <div class="mu-slider-area"> <br><br><br><br>
+      <!-- Top slider -->
+      <div class="mu-top-slider">
+        <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+              <img src="{{ url_for('static', filename='img/slider/book.webp') }}" alt="img">
+              <!-- Top slider content -->
+              <div class="mu-top-slider-content">
+              <h2 style="color: white">વિદ્યાર્થીઓ  ધોરણ 9 થી 12 ના ગુજરાતી મીડીયમ ના પાઠયપુસ્તક અહીંથી ડાઉનલોડ કરી શકે છે</h2> 
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide --> 
+      </div>
+    </div> 
+                  <div class="container" class="col-sm-6">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span >આર્ટસ <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        </button><br><br><br>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a  href="{{ url_for('course') }}">9,10</a></li>
+                          <li><a href="{{ url_for('commerce') }}">11,12 કોમર્સ</a></li>
+                        </ul>
+                    </div>
+                    </div>
+
+
+            
+              <div class="col-md-6">
+                <p class="subject">ધોરણ  11</p><br><br>
+                 <ul id="book">
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1v5c7fQDhAdH0hT0ouZ8CN1PhbKbNP92_">ગુજરાતી</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=17fW5CYacGmJmyD9N9dKutokDnzL4Oez9">English</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1A5BaVyR9z-6YAhAjbL5mIjEKZSotqb3P">સંકૃત</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1Pe_j1ANcAY2IbROkJtEfEdxFE7jqF7Qb">ભૂગોળ</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1sJEy7LSWmNdpuAYKy-LOxJAa69kvXJj5">રાજ્યશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1h6R1ukb6QkzaGQ68uz7cw6vcFtGCR7Aw">ઈતિહાસ</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1N6sCepd7Pm_UzA7oVtX-mDcJC3tHzMxU">સમાજશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1c-wqW630xbpI-BoaGJnSfu3BzBaPMFVt">અર્થશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=11ttg6vXR5zkhQNN0XX5q9Y-JkoYbUI0m">શા.શી</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1SsDj_VZh4RtGsM12uEDFmzTzADWx7LYB">આંકડાશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1N0FPjRKENboJUfD_3drHqc7qsYg1H55v">તત્વજ્ઞાન</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1d4AkWV9K_tb9Wh9AdVTTEUStERtdkgm1">મનોવિજ્ઞાન </a></li>
+                     
+                </ul>
+              </div>
+
+              <div class="col-md-6">
+                <p class="subject">ધોરણ 12</p><br><br>
+                 <ul id="book">
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAaDFoemt1OE40dTg">રાજ્યશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAVlRMNDdGUHRsam8">સંસ્કૃત</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurASW5WS3lRVlEwQjg">સમાજશાસ્ત્ર</a></li><br>
+                   <li><a target="_blank" href="">English</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAbmM0V2tjLU9UMkk">અર્થશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurATFBqdUxzeUs1T0U">ગુજરાતી</a></li><br>
+
+                  <li><a target="_blank" href="">આંકડાશાસ્ત્ર</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAcUZQaTZKaEZQa1k">ઈતિહાસ</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAVnp5NWE0U3NwMzQ">ભૂગોળ</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAaGF4cHBINGloWHM">શા.શી</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAaWlWVW9IUnl3Rlk">તત્વજ્ઞાન</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=14Srj8DNBtd-jF5leJypDTipYxYFhIllq">મનોવિજ્ઞાન</a></li>
+
+                  
+
+                </ul>
+              </div>
+  <!-- End Gallery -->
+  </section>
+  <!-- End slider  -->
+  
+{% endblock %}

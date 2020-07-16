@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+
+  <!-- Start slider  -->
+            <section id="mu-slider">
+              <div class="mu-slider-area"> <br><br><br><br>
+                <!-- Top slider -->
+                <div class="mu-top-slider">
+                  <!-- Top slider single slide -->
+                  <div class="mu-top-slider-single">
+                    <img src="{{ url_for('static', filename='img/slider/book.webp') }}" alt="img">
+                    <!-- Top slider content -->
+                    <div class="mu-top-slider-content">
+                      <h2 style="color: white">વિદ્યાર્થીઓ  ધોરણ 9 થી 12 ના ગુજરાતી મીડીયમ ના પાઠયપુસ્તક અહીંથી ડાઉનલોડ કરી શકે છે</h2> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                  <div class="container" class="col-sm-6">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span >9,10<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        </button><br><br><br> 
+                          <ul class="dropdown-menu" role="menu">
+                          <li><a  href="{{ url_for('arts')}}">11,12 આર્ટસ</a></li>
+                          <li><a href="{{ url_for('commerce') }}">12,12 કોમર્સ</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+            
+              <div class="col-md-6">
+                <p class="subject">ધોરણ 9</p><br><br>
+                 <ul id="book">
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1tsN9fwZbrsuP_5-CVvRqN4k2jrupz41U">હિન્દી</a></li><br>
+                  <li><a target="_blank" href="">ગુજરાતી</a></li><br>
+                  <li><a target="_blank" href="https://www.yumpu.com/xx/document/read/60031473/std-9-mathematics-gm">ગણિત</a></li><br>
+                  <li><a target="_blank" href="">સંસ્કૃત</a></li><br>
+                  <li><a target="_blank" href="https://www.yumpu.com/xx/document/read/60031431/std-9-science-gm">વિજ્ઞાન અને ટેક્નોલોજી</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1toY-jPYbaZnTmrS43pXkNS95wWJbTGlt" download="gujrati">સામાજીક વિજ્ઞાન</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=1LeE-5-oeBbSVp428zUYdx8IQPljdvtgc">English</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/open?id=0BxN_zOmTUurANGhqTW01amU3enM">શા.શી </a></li><br>
+                 </ul>
+              </div>
+              
+            
+              <div class="col-md-6">
+                <p class="subject">ધોરણ 10</p><br><br>
+                 <ul id="book">
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAcjRSN09Ec0k0a0U">હિન્દી</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAU1R6ckhNRTNfTG8">ગુજરાતી</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=1UStn0x7ZdmoWX64JM0E5sFWRHHXlGIad">ગણિત</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0B6nBH-pqbHbqME11YzVreUNjX0k">સંસ્કૃત</a></li><br>
+                  <li><a target="_blank" href="https://www.yumpu.com/xx/document/read/60031473/std-9-mathematics-gm">વિજ્ઞાન & ટેક્નોલોજી</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=1p2ap17Xx9PNCbAMHPOVOzoYGUnFK-gwX">સામાજીક વિજ્ઞાન</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAdndrZ2tJUkxXLW8">English</a></li><br>
+                  <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=0BxN_zOmTUurAcnJjLVNRLW45Uk0">શા.શી</a></li><br>
+                </ul>           
+              </div>
+             
+  </section>
+  <!-- End slider  -->
+  
+{% endblock %}
